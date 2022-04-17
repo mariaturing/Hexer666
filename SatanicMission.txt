@@ -1,0 +1,17 @@
+ARP Req asking for IPs
+Send packet, wait for response
+Parse response.
+Print result.
+
+This only step 1.
+
+Now we go for ARP Spoofing.
+ARP is not very secure.
+MAC address is vulnerable.
+No verification of source.
+The victim believes I am the router.
+
+How to implement in Python@
+
+
+
