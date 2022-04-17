@@ -1,0 +1,60 @@
+﻿https://www.youtube.com/watch?v=pZ70Ad35jLE
+
+from scapy.layers.inet import IP, TCP
+
+class IP(Packet, IPTools):
+
+Packets Manipulation 
+
+In Scapy everything is an OBJECT.An IP packet is an Object, a TCP packet is an object.
+You can STACK these objects on top of each other using the SLASH operator.
+
+Fields inside the IP version. Select correct IP adresses.
+
+You can use methods on objects.
+
+.src source adress
+
+Interacting with the network
+
+Send to the network.
+
+sr1() function sends a packet and returns a reply.
+Scapy can match queries and answers.
+
+srp() layer 2 returns r received (Results)
+
+.summary()
+
+Accessing different layers.
+
+.command()-- full string to build a packet
+
+SNIFF FUNCTION
+s=sniff(count=2)
+sniff(count=2, prn= lambda p: p.summary())
+
+lsc()
+arping()-- which hosts are up
+
+srloop() send 100 packets, plot info in packets
+
+Loadbalancers cheating, information gathering
+
+str() repr(str(pkt))-- binary
+hexdump(pkt)-- hex
+pkt.show()-- display values
+packet.show2()-- computes missing variables
+pkt.canvas_dump()
+
+WHAT IS TTL@
+
+ans, unans = traceroute("www.secdev.org", maxttl=15)
+
+ans.world_trace()-- repr of traceroute
+
+You can build a port scanner.19:43
+
+Enough for now! We"ve only got 4 minutes to save the World!
+
+ans.world_trace()
