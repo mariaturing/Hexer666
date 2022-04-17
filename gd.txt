@@ -1,0 +1,15 @@
+In digital systems, you have IP addresses, MAC
+addresses, and source and destination ports.
+
+Memorize the TCP header. Source Port. Destination Port.
+
+IP header--» TLS--» Destination IP Adr, Source IP adr.
+
+The Ethernet header helps the data to navigate in the local network.
+
+In this section, we will create a simple scanner, scan hosts in our local network, and find
+their MAC addresses. In order to create the scanner, we need to first understand what the
+Address Resolution Protocol (ARP) is and how it can be used for creating a network
+scanner.
+
+Mission Possible Number 1.
